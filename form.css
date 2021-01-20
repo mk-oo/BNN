@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+form {
+    width: 50vw;
+}
+
+.data {
+    width: 100%;
+    margin-bottom: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.data input,
+select {
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.data label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.data .content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.data select:focus+.label-name .content-name,
+.data select:valid+.label-name .content-name,
+.data input:focus+.label-name .content-name,
+.data input:valid+.label-name .content-name {
+    transform: translateY(-125%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.data select:focus+.label-name::after,
+.data select:valid+.label-name::after,
+.data input:focus+.label-name::after,
+.data input:valid+.label-name::after {
+    transform: translateX(0%);
+}
+
+button {
+    width: 20%;
+    height: 7vh;
+    background: #5fa8d3;
+    margin-left: 3%;
+    color: white;
+    font-size: 2vw;
+    font-weight: bolder;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    color: #69c0f1;
+    background: rgb(0, 44, 61);
+}
+
+.in {
+    width: 20vw;
+}
+
+.in h1 {
+    margin-left: 30%;
+    font-size: 200px;
+}
+
+.in h4 {
+    margin-left: 43%;
+    font-size: 19px;
+}
+
+.in p {
+    margin-left: 40%;
+}
+
+
+/**********************************************/

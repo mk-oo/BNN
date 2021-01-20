@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bank Booking number</h1>
+        <br>
+        <br>
+    </header>
+    <form id="form1" onsubmit="submmiting();">
+        <!--this is name input-->
+        <div class="data">
+            <input type="text" name="name" id="name" minlength="5" autocomplete="off" required>
+            <label for="name" class="label-name">
+                <span class="content-name">Name<span style="color: red;">*</span></span>
+            </label>
+        </div>
+        <!--this is National-ID input-->
+        <div class="data">
+            <input type="number" name="nID" id="nID" minlength="14" autocomplete="off" required />
+            <label for="nID" class="label-name">
+                <span class="content-name">National-ID<span style="color: red;">*</span></span>
+            </label>
+        </div>
+        <!--this is mobile input-->
+        <div class="data">
+            <input type="tel" name="mobile" id="mobile" minlength="11" autocomplete="off" required>
+            <label for="mobile" class="label-name">
+                <span class="content-name">Mobile<span style="color: red;">*</span></span>
+            </label>
+        </div>
+        <!--this is Services input-->
+        <div class="data">
+            <select id="Services" required>
+                <option value="100">Open an account</option>
+                <option value="200">Deposit</option>
+                <option value="300">Withdrawal</option>
+                <option value="400">Subscribe to services</option>
+                <option value="500">Checking accounts</option>
+                <option value="600">Debit & credit cards</option>
+                <option value="700">Insurance</option>
+                <option value="800">Loans</option>
+            </select>
+            <label for="Services" class="label-name">
+                <span class="content-name">Services<span style="color: red;">*</span></span>
+            </label>
+        </div>
+        <button type="submit">Signup</button>
+        <button onclick="myFunction2()">Show</button>
+        <button onclick="myFunction1()">Clear</button>
+        <button><a href="main.html">Preview</a></button>
+    </form>
+
+    <div id="info" class="in">
+
+    </div>
+
+
+    <p id="demo"></p>
+
+
+
+</body>
+<script type="text/javascript" src="form.js"></script>
+
+</html>
